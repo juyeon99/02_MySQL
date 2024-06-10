@@ -26,7 +26,7 @@ ORDER BY
 SELECT
     menu_code,
     menu_name,
-    menu_code * menu_name as multiple
+    menu_code * menu_name AS multiple
 FROM tbl_menu
 ORDER BY multiple desc;
 
@@ -66,4 +66,3 @@ SELECT category_code, category_name, ref_category_code
 FROM tbl_category
 ORDER BY ref_category_code is null desc,    -- null값의 위치를 맨 위로 정하고
          ref_category_code asc;             -- 나머지를 오름차순으로 정렬
-
