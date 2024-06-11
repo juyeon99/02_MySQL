@@ -7,8 +7,7 @@ SQL (Structured Query Language)
 
 -- SELECT
 -- 특정 테이블에서 원하는 데이터 조회
-SELECT          -- 조회
-    menu_name   -- which column
+SELECT menu_name   -- which column
 FROM tbl_menu;  -- from which table
 
 -- 여러 column 한번에 조회
@@ -36,5 +35,5 @@ SELECT NOW();   -- 현재 시간
 SELECT CONCAT('hello','world'); -- 문자열 합치기
 
 -- column에 별칭 사용
-SELECT CONCAT('hong',' ','juyeon') as name;
-SELECT CONCAT('hong',' ','juyeon') as 'Full name';
+SELECT CONCAT('hong',' ','juyeon') AS name;
+SELECT CONCAT('hong',' ','juyeon') AS 'Full name';
